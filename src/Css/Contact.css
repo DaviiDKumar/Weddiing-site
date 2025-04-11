@@ -1,0 +1,80 @@
+.contact-section {
+    background: var(--blessing-bg);
+    color: var(--text1);
+    padding: 4rem 2rem;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* ensures equal height */
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 400px;
+    filter: brightness(0.85);
+    box-shadow: var(--blessing-card-shadow);
+    border-radius: 0; /* removed radius */
+  }
+  
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background: var(--blessing-card-bg);
+    padding: 2rem;
+    box-shadow: var(--blessing-card-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    backdrop-filter: blur(12px);
+    border-radius: 0; /* removed radius */
+  }
+  
+  .form-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0;
+    border: none;
+    background: var(--input-bg, #f0f0f0);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: none;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent-color);
+  }
+  
+  .send-btn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.9rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .send-btn:hover {
+    background: var(--accent-hover, #6b21a8);
+    transform: scale(1.05);
+  }
+  

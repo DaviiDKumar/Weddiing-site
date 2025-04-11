@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.heart-loader-screen {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #1c0a1f, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* Floating Heart Section */
+.floating-heart-container {
+  position: relative;
+  animation: float 4s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* Main heart */
+.heart-shape {
+  width: 100px;
+  height: 90px;
+  background: linear-gradient(145deg, #ff77aa, #ffbde0);
+  transform: rotate(-45deg);
+  position: relative;
+  box-shadow: 0 0 25px #ff77aa88, 0 0 60px #ffaad099;
+  animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+.heart-shape::before,
+.heart-shape::after {
+  content: "";
+  width: 100px;
+  height: 90px;
+  background: inherit;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart-shape::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart-shape::after {
+  left: 50px;
+  top: 0;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: rotate(-45deg) scale(1); }
+  50% { transform: rotate(-45deg) scale(1.1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+
+
+/* Love text */
+.love-text {
+  color: #fff0f5;
+  font-family:  "Passero One", serif;
+  font-size: 3.8rem;
+  margin-top: 0.5rem;
+  text-shadow: 0 0 12px #ffaad0aa;
+  animation: fadeInUp 2s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Progress bar */
+.progress-bar-container {
+  width: 220px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 2.3rem;
+  box-shadow: 0 0 10px #ffaad055;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ff77aa, #ffaad0, #ffe0f5);
+  transition: width 0.3s ease-out;
+}
+
+/* Blurred hearts in background */
+.blurred-heart {
+  position: absolute;
+  width: 40px;
+  height: 36px;
+  background: #ff77aa44;
+  transform: rotate(-45deg);
+  filter: blur(14px);
+  opacity: 0.25;
+  animation: drift 10s infinite ease-in-out alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blurred-heart::before,
+.blurred-heart::after {
+  content: "";
+  width: 40px;
+  height: 36px;
+  background: #ffaad066;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.blurred-heart::before {
+  top: -20px;
+  left: 0;
+}
+
+.blurred-heart::after {
+  top: 0;
+  left: 20px;
+}
+
+@keyframes drift {
+  0%   { transform: translateY(0) scale(1) rotate(-45deg); }
+  100% { transform: translateY(-20px) scale(1.1) rotate(-45deg); }
+}
+
+/* Position variants */
+.heart-1 { top: 20%; left: 15%; animation-delay: 0s; }
+.heart-2 { top: 60%; left: 10%; animation-delay: 1s; }
+.heart-3 { top: 10%; left: 80%; animation-delay: 2s; }
+.heart-4 { top: 50%; left: 75%; animation-delay: 3s; }
+.heart-5 { top: 75%; left: 45%; animation-delay: 4s; }
+.heart-6 { top: 30%; left: 50%; animation-delay: 5s; }

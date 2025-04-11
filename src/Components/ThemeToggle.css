@@ -1,0 +1,37 @@
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+  }
+  
+  .theme-toggle:hover {
+    background-color: rgba(var(--text1-rgb, 255, 255, 255), 0.1);
+    transform: scale(1.1);
+  }
+  
+  .theme-toggle:focus {
+    box-shadow: 0 0 0 2px var(--accent-color, #ff4081);
+  }
+  
+  /* Icon styles */
+  .theme-toggle svg {
+    font-size: 24px;
+    color: var(--toggle-color, var(--text1));
+    transition: color 0.3s ease;
+  }
+  
+  /* Mobile-specific tweaks */
+  @media (max-width: 768px) {
+    .theme-toggle svg {
+      font-size: 20px;
+      color: var(--toggle-color2, var(--text2));
+    }
+  }
+  

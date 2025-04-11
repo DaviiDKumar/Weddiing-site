@@ -1,0 +1,105 @@
+.blessings-section {
+  padding: 3rem 2rem;
+  background: url('/Images/bless.jpg') center/cover no-repeat fixed;
+  color: var(--text1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.blessings-overlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* soft dark overlay */
+  z-index: 0;
+  backdrop-filter: blur(2px);
+}
+
+.blessings-heading,
+.blessings-wrapper,
+.slider-controls {
+  position: relative;
+  z-index: 1;
+}
+
+.blessings-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blessings-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  min-height: 300px;
+}
+
+.blessings-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  padding: 0 1rem;
+}
+
+.blessing-card {
+  min-width: 280px;
+  max-width: 350px;
+  flex: 0 0 auto;
+  backdrop-filter: blur(20px);
+  background: var(--blessing-card-bg);
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  box-shadow: var(--blessing-card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blessing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--blessing-card-hover-shadow);
+}
+
+.blessing-message {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.blessing-name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--accent-color);
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.nav-btn {
+  background: var(--blessing-btn-bg);
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  color: white;
+  box-shadow: var(--blessing-btn-shadow);
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btn:hover {
+  background: var(--blessing-btn-hover-bg);
+  transform: scale(1.1);
+}
+
+.nav-btn svg {
+  color: black;
+}
