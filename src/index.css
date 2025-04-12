@@ -1,43 +1,45 @@
 :root {
   /* Headings */
-  --h1: #111;
-  --h2: #222;
-  --h3: #333;
-  --h4: #444;
-  --h5: #555;
-  --h6: #666;
+  --h1: #1b1b1b;
+  --h2: #2c2c2c;
+  --h3: #3d3d3d;
+  --h4: #4e4e4e;
+  --h5: #5f5f5f;
+  --h6: #6f6f6f;
 
   /* Text */
   --text1: #1a1a1a;
   --text2: #2e2e2e;
-  --text3: #444;
-  --text4: #666;
-  --text5: #888;
+  --text3: #555;
+  --text4: #777;
+  --text5: #999;
+
+  --textN:rgb(233, 220, 220);
+
 
   /* Links */
-  --link-color: #0066cc;
-  --link-hover-color: #004799;
-  --link-active-color: #002f66;
+  --link-color: #d26ed4; /* soft pink */
+  --link-hover-color: #a45cc4;
+  --link-active-color: #894bb3;
 
   /* Borders & Shadows */
-  --border-color-1: #e0e0e0;
-  --border-color-2: #cccccc;
+  --border-color-1: #eaeaea;
+  --border-color-2: #dcdcdc;
   --shadow-color: rgba(0, 0, 0, 0.1);
 
   /* Accent */
-  --accent-color: #007bff;
+  --accent-color: #709bf3; /* soft bluish */
 
   /* Backgrounds */
   --bg-color: #ffffff;
-  --bg-secondary-color: #f8f9fa;
+  --bg-secondary-color: #f9f9fe;
 
-  --toggle-color: #222;
-  --toggle-color2: #eee;
-  --text1-rgb: 0, 0, 0; /* RGB version for hover background */
+  --toggle-color: #444;
+  --toggle-color2: #ddd;
+  --text1-rgb: 0, 0, 0;
 
-
-  --counter-gradient: linear-gradient(135deg, #fff1f1, #ffe8fc);
-  --heading-gradient: linear-gradient(45deg, #f78da7, #ffb6b9);
+  --counter-gradient: linear-gradient(135deg, #ffe8f0, #e0f3ff);
+  --heading-gradient: linear-gradient(45deg, #f78da7, #b5c6ff);
   --card-bg: linear-gradient(135deg, #fff0f5, #f0faff);
   --card-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   --card-shadow-hover: 0 10px 28px rgba(0, 0, 0, 0.15);
@@ -51,58 +53,90 @@
   --blessing-btn-hover-bg: rgba(255, 255, 255, 0.6);
   --blessing-btn-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 
+
+
+ 
+    --about-bg: #fffafc;
+    --about-text1: #2d2d2d;
+    --about-text2: #3a3a3a;
+    --about-text3: #666;
+    --about-border: #f0dfe7;
+    --about-shadow: 0 6px 16px rgba(180, 130, 190, 0.1);
+    --about-shadow-hover: 0 12px 24px rgba(150, 100, 160, 0.15);
+    --about-accent: #a763c1;
+    --about-card-bg: rgba(255, 255, 255, 0.75);
+    --about-card-bg-hover: rgba(255, 255, 255, 0.9);
+ 
+    --border:black;
+  
+  
 }
 
 [data-theme="dark"] {
+  
   /* Headings */
-  --h1: #c0aaff;
-  --h2: #aab2ff;
-  --h3: #a9c6ff;
-  --h4: #8b99d8;
-  --h5: #7781b1;
-  --h6: #666;
+  --h1: #e2ccff;
+  --h2: #cdb3ff;
+  --h3: #b69cff;
+  --h4: #9f86ff;
+  --h5: #8a6ce6;
+  --h6: #7555cc;
 
   /* Text */
-  --text1: #e0e0ff;
-  --text2: #c5c5ff;
-  --text3: #aaaacc;
-  --text4: #8888aa;
-  --text5: #666688;
+  --text1: #f2f0fa;
+  --text2: #d8d2ff;
+  --text3: #bfaefc;
+  --text4: #a48be4;
+  --text5: #8e77cc;
+  --textN:rgb(233, 220, 220);
 
   /* Links */
-  --link-color: #bb86fc;
-  --link-hover-color: #985eff;
-  --link-active-color: #7f39fb;
+  --link-color: #c08cff;
+  --link-hover-color: #a259ff;
+  --link-active-color: #892be2;
 
   /* Borders & Shadows */
-  --border-color-1: #3a3a55;
-  --border-color-2: #5b5b7a;
-  --shadow-color: rgba(0, 0, 0, 0.6);
+  --border-color-1: #2a2a3a;
+  --border-color-2: #3d3d5c;
+  --shadow-color: rgba(0, 0, 0, 0.5);
 
   /* Accent */
-  --accent-color: #a259ff;
+  --accent-color: #bf80ff;
 
   /* Backgrounds */
-  --bg-color: #0a0a0a;
-  --bg-secondary-color: #1a1a2e;
-  --toggle-color: #eee;
-  --toggle-color2: #bbb;
+  --bg-color: #0b0b12;
+  --bg-secondary-color: #161627;
+  --toggle-color: #f0eaff;
+  --toggle-color2: #c4b4e3;
   --text1-rgb: 255, 255, 255;
 
-  --counter-gradient: linear-gradient(135deg, #1a1a2e, #301934);
-  --heading-gradient: linear-gradient(45deg, #ffb6b9, #f78da7);
-  --card-bg: linear-gradient(135deg, #2b2b2b, #1c1c1c);
-  --card-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
-  --card-shadow-hover: 0 10px 28px rgba(255, 255, 255, 0.08);
+  --counter-gradient: linear-gradient(135deg, #2a1a3a, #3c1f4a);
+  --heading-gradient: linear-gradient(45deg, #e0b3ff, #bd7aff);
+  --card-bg: linear-gradient(135deg, #1f1f2a, #13131f);
+  --card-shadow: 0 8px 24px rgba(255, 255, 255, 0.03);
+  --card-shadow-hover: 0 10px 28px rgba(255, 255, 255, 0.06);
   --border-color: #444;
 
-  --blessing-bg: linear-gradient(135deg, #1a1a2e, #301934);
-  --blessing-card-bg: rgba(40, 40, 40, 0.35);
+  --blessing-bg: linear-gradient(135deg, #1f1a2e, #2c1f3c);
+  --blessing-card-bg: rgba(60, 40, 80, 0.35);
   --blessing-card-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
   --blessing-card-hover-shadow: 0 10px 28px rgba(255, 255, 255, 0.08);
-  --blessing-btn-bg: rgba(255, 255, 255, 0.1);
-  --blessing-btn-hover-bg: rgba(255, 255, 255, 0.2);
-  --blessing-btn-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-}
+  --blessing-btn-bg: rgba(255, 255, 255, 0.07);
+  --blessing-btn-hover-bg: rgba(255, 255, 255, 0.12);
+  --blessing-btn-shadow: 0 0 8px rgba(200, 150, 255, 0.3);
 
+ 
+    --about-bg: #1a111d;
+    --about-text1: #f2dfff;
+    --about-text2: #e0caff;
+    --about-text3: #bfa0d4;
+    --about-border: #3c2e4d;
+    --about-shadow: 0 6px 16px rgba(255, 255, 255, 0.03);
+    --about-shadow-hover: 0 12px 24px rgba(255, 255, 255, 0.06);
+    --about-accent: #dc95ff;
+    --about-card-bg: rgba(40, 20, 60, 0.5);
+    --about-card-bg-hover: rgba(60, 30, 80, 0.6);
+    --border: white ;
+  }
+  
 

@@ -8,12 +8,11 @@
 }
 
 .blessings-overlay {
-  content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45); /* soft dark overlay */
-  z-index: 0;
+  background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(2px);
+  z-index: 0;
 }
 
 .blessings-heading,
@@ -31,24 +30,24 @@
 .blessings-wrapper {
   overflow: hidden;
   width: 100%;
-  position: relative;
-  min-height: 300px;
+  min-height: 320px;
 }
 
 .blessings-grid {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  flex-wrap: nowrap;
   padding: 0 1rem;
+  flex-wrap: nowrap;
 }
 
 .blessing-card {
-  min-width: 280px;
-  max-width: 350px;
   flex: 0 0 auto;
-  backdrop-filter: blur(20px);
+  width: 100%;
+  max-width: 350px;
+  min-width: 260px;
   background: var(--blessing-card-bg);
+  backdrop-filter: blur(20px);
   border-radius: 1.5rem;
   padding: 2rem 1.5rem;
   box-shadow: var(--blessing-card-shadow);
@@ -102,4 +101,30 @@
 
 .nav-btn svg {
   color: black;
+}
+
+/* 🌐 Responsive Tweaks */
+@media (max-width: 1023px) {
+  .blessings-grid {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .blessing-card {
+    max-width: 90%;
+  }
+
+  .nav-btn {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .blessings-section {
+    padding: 2rem 1rem;
+  }
+
+  .blessings-heading {
+    font-size: 1.5rem;
+  }
 }

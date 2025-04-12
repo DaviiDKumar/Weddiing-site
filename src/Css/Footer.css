@@ -1,20 +1,15 @@
 .footer-section {
-  background: var(--footer-bg, linear-gradient(to right, #2e003e, #1a1a2e));
-  color: var(--footer-text, #f9f6f6);
+  background: var(--blessing-bg);
+  color: var(--text1);
   padding: 3rem 1.5rem;
   text-align: center;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  border-top: 2px solid var(--border);
 }
 
-.footer-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: -1;
-}
+
 
 .footer-content {
   max-width: 800px;
@@ -27,8 +22,7 @@
 .footer-names {
   font-size: 2rem;
   font-weight: 700;
-  font-family: 'Great Vibes', cursive;
-  color: var(--accent-color, #ffb6c1);
+  color: var(--accent-color);
   letter-spacing: 1px;
 }
 
@@ -46,7 +40,7 @@
 }
 
 .footer-socials a {
-  color: var(--footer-link, #ffd6f6);
+  color: var(--text2);
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -60,12 +54,12 @@
   left: 0;
   height: 2px;
   width: 0%;
-  background: var(--accent-color, #ffb6c1);
+  background: var(--accent-color);
   transition: width 0.3s ease;
 }
 
 .footer-socials a:hover {
-  color: var(--accent-color, #ffb6c1);
+  color: var(--accent-color);
 }
 
 .footer-socials a:hover::after {
@@ -75,6 +69,6 @@
 .footer-copy {
   margin-top: 2rem;
   font-size: 0.9rem;
-  color: #ccc;
+  color: var(--text2);
   font-style: italic;
 }

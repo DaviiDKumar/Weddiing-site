@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+// eslint-disable-next-line
 import { AnimatePresence, motion } from "framer-motion";
 import "../Css/Blessings.css";
 
@@ -15,10 +16,23 @@ const blessingsData = [
   { message: "Blessings for a magical life ahead!", name: "Family Sharma" },
 ];
 
+const getCardsPerView = () => {
+  const width = window.innerWidth;
+  if (width < 768) return 1;
+  if (width < 1024) return 2;
+  return 3;
+};
+
 const Blessings = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [direction, setDirection] = useState(1);
-  const cardsPerView = 3;
+  const [cardsPerView, setCardsPerView] = useState(getCardsPerView());
+
+  useEffect(() => {
+    const handleResize = () => setCardsPerView(getCardsPerView());
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handlePrev = () => {
     setDirection(-1);

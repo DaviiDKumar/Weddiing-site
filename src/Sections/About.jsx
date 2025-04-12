@@ -21,7 +21,7 @@ function About() {
     };
 
     return (
-        <section className="About">
+        <section className="About" id="About">
 
             <div className="about-left">
                 <motion.div 
@@ -61,8 +61,8 @@ function About() {
                             variants={cardVariants}
                         >
                             {card.icon}
-                            <h3 className="card-title">{card.title}</h3>
-                            <p className="card-desc">{card.desc}</p>
+                            <h3 className="card-title-a">{card.title}</h3>
+                            <p className="card-desc-a">{card.desc}</p>
                         </motion.div>
                     ))}
                 </div>

@@ -2,24 +2,24 @@
 .navbar {
   width: 100%;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   /* semi-transparent white */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   /* Safari support */
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.8);
   /* subtle inner border */
   border-bottom: 1px solid var(--border-color-1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   /* soft shadow */
-  color: var(--text1);
+  color: var(--textN);
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 .2rem .2rem;
   min-height: 10vh;
   max-height: 10vh;
   /* optional: rounded bottom */
@@ -28,9 +28,9 @@
 
 /* Logo */
 .logo {
-  font-size: 1.8rem;
+  
   font-weight: bold;
-  color: var(--text1);
+  color: var(--textN);
 }
 
 /* Links */
@@ -50,8 +50,7 @@
 
 .nav-li a {
   font-weight: 500;
-  font-size: 1rem;
-  color: var(--text2);
+  color: var(--textN);
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
@@ -93,7 +92,7 @@
   display: block;
   height: 3px;
   width: 100%;
-  background: var(--text1);
+  background: var(--textN);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -122,21 +121,21 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 70%;
-    max-width: 300px;
+    height: max-content;
+    width: 100%;
+  
     flex-direction: column;
     align-items: flex-start;
-    background: rgba(var(--bg-rgb), 0.97);
+    background: black;
     padding: 2rem;
-    transform: translateX(-100%);
-    transition: transform 0.4s ease-in-out;
+    transform: translateY(-100%);
+    transition: transform 1s ease-in-out;
     z-index: 999;
     display: flex;
   }
 
   .navbar-right_links.open {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   .navbar-right_links .nav-ul {
@@ -145,6 +144,13 @@
     width: 100%;
   }
 
+  .navbar-right_links .nav-ul .nav-li{
+
+    max-width: fit-content;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid white;
+
+  }
   .hamburger {
     display: flex;
   }

@@ -3,10 +3,10 @@ import "../Css/Contact.css"; // Make sure you create this CSS file
 
 const Contact = () => {
   return (
-    <section className="contact-section" id="contact">
+    <section className="contact-section" id="Contact">
       <div className="contact-container">
         <div className="contact-image">
-          <img src="/images/contact-art.jpg" alt="Contact" />
+          <img src="/Images/ctc.jpg" alt="Contact" />
         </div>
         <form className="contact-form">
           <h2 className="form-title">📬 Send Us a Message</h2>

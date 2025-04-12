@@ -9,7 +9,7 @@ const StorySec = () => {
 
   const tabContent = {
     firstdate: {
-      image: "/images/first-date.jpg", // make sure you have this image
+      image: "/Images/FDAte.jpg", // make sure you have this image
       icon: <FaHeart className="story-icon" />,
       title: "Our First Date",
       date: "August 22, 2021",
@@ -19,7 +19,7 @@ const StorySec = () => {
       quote: "That coffee turned into hours, and those hours turned into forever.",
     },
     engagement: {
-      image: "/images/engagement.jpg",
+      image: "/Images/Engg.jpg",
       icon: <FaRing className="story-icon" />,
       title: "The Day We Said Yes!",
       date: "February 10, 2024",

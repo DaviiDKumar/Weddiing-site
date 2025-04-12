@@ -3,7 +3,6 @@
   padding: 4rem 2rem;
   background: var(--bg-color);
   color: var(--text1);
-  text-align: center;
   transition: background 0.4s ease, color 0.4s ease;
   max-width: 1200px;
   margin: 0 auto;
@@ -46,7 +45,7 @@
   font-weight: bold;
   margin-bottom: 0.5rem;
   margin-top: -0.2rem;
-  color: var(--accent-color, #e29578);
+  color: var(--accent-color);
   background: var(--heading-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -97,7 +96,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 0.8rem;
   text-align: left;
 }
@@ -117,4 +115,12 @@
   font-size: 0.95rem;
   color: var(--text4);
   font-style: italic;
+}
+
+.card-content{
+
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  padding:  .7rem;
 }

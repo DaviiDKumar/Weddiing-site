@@ -16,14 +16,11 @@
     transform: scale(1.1);
   }
   
-  .theme-toggle:focus {
-    box-shadow: 0 0 0 2px var(--accent-color, #ff4081);
-  }
-  
+ 
   /* Icon styles */
   .theme-toggle svg {
     font-size: 24px;
-    color: var(--toggle-color, var(--text1));
+    color: white;
     transition: color 0.3s ease;
   }
   

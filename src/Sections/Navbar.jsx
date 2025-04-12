@@ -17,9 +17,9 @@ function Navbar() {
         <div className={`navbar-right_links ${menuOpen ? "open" : ""}`}>
           <ul className="nav-ul">
             <li className="nav-li"><a href="#">Home</a></li>
-            <li className="nav-li"><a href="#">About Us</a></li>
-            <li className="nav-li"><a href="#">Wedding Plan</a></li>
-            <li className="nav-li"><a href="#">Contact Us</a></li>
+            <li className="nav-li"><a href="#About">About Us</a></li>
+            <li className="nav-li"><a href="#Wed">Wedding Plan</a></li>
+            <li className="nav-li"><a href="#Contact">Contact Us</a></li>
           </ul>
           <ThemeToggle />
         </div>

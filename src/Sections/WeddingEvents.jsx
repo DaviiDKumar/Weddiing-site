@@ -9,7 +9,7 @@ const eventGroups = [
       {
         title: "Haldi & Mehendi",
         desc: "Let's get yellow, messy, and colorful 🌼",
-        image: "/assets/mh1.jpg",
+        image: "/Images/Haldi.jpg",
         time: "10:00 AM – 12:30 PM",
         place: "Home Lawn, Jaipur"
       }
@@ -21,7 +21,7 @@ const eventGroups = [
       {
         title: "Ladies' Sangeet",
         desc: "Dance. Music. Masala. Enough said 💃",
-        image: "/assets/sng.jpg",
+        image: "/Images/Sngeet.jpg",
         time: "6:30 PM onwards",
         place: "Golden Leaf Banquet, Jaipur"
       }
@@ -33,7 +33,7 @@ const eventGroups = [
       {
         title: "Chak Bhaat Ceremony",
         desc: "Traditions, laughter, and turmeric rice 🍚",
-        image: "/assets/ch.jpg",
+        image: "/Images/chk.jpg",
         time: "11:00 AM",
         place: "Ancestral House, Jaipur"
       }
@@ -45,7 +45,7 @@ const eventGroups = [
       {
         title: "Baraat & Wedding Dinner",
         desc: "Dhol, dancing, vows & a grand feast 🎉",
-        image: "/assets/sh.jpg",
+        image: "/Images/shadi.jpg",
         time: "7:00 PM onwards",
         place: "Raj Mahal Palace, Jaipur"
       }
@@ -55,7 +55,7 @@ const eventGroups = [
 
 export default function WeddingEvents() {
   return (
-    <section className="wedding-section">
+    <section className="wedding-section" id="Wed">
       <h2 className="wedding-heading">Our Wedding Celebrations</h2>
       <div className="event-section-grid">
         {eventGroups.map((group, idx) =>

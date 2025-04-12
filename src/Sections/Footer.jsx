@@ -6,7 +6,7 @@ function Footer(){
   
   <footer className="footer-section">
   <div className="footer-content">
-    <h2 className="footer-names">David & Priya</h2>
+    <h2 className="footer-names">Niharika and Kuldeep</h2>
     <p className="footer-message">Thank you for being a part of our celebration 💖</p>
     <div className="footer-socials">
       <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../Css/Counter.css";
 
 const CountdownTimer = () => {
   const calculateTimeLeft = () => {
@@ -34,22 +35,28 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="timer">
-      <div className="time-box">
-        <span className="num">{timeLeft.days}</span>
-        <span className="label">Days</span>
-      </div>
-      <div className="time-box">
-        <span className="num">{timeLeft.hours}</span>
-        <span className="label">Hours</span>
-      </div>
-      <div className="time-box">
-        <span className="num">{timeLeft.minutes}</span>
-        <span className="label">Minutes</span>
-      </div>
-      <div className="time-box">
-        <span className="num">{timeLeft.seconds}</span>
-        <span className="label">Seconds</span>
+    <div className="countdown-container">
+      <h2 className="countdown-heading">Counting Down To-" Forever ", To-" I DO "</h2>
+      <p className="countdown-description">
+        "Every moment brings us closer <br />A journey of love, waiting to begin."
+      </p>
+      <div className="timer">
+        <div className="time-box">
+          <span className="num">{timeLeft.days}</span>
+          <span className="label">Days</span>
+        </div>
+        <div className="time-box">
+          <span className="num">{timeLeft.hours}</span>
+          <span className="label">Hours</span>
+        </div>
+        <div className="time-box">
+          <span className="num">{timeLeft.minutes}</span>
+          <span className="label">Minutes</span>
+        </div>
+        <div className="time-box">
+          <span className="num">{timeLeft.seconds}</span>
+          <span className="label">Seconds</span>
+        </div>
       </div>
     </div>
   );
